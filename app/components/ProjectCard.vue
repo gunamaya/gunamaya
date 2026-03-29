@@ -8,9 +8,10 @@ defineProps<{
 </script>
 
 <template>
-  <NuxtLink
+  <AppCard
+    variant="clickable"
+    padding="none"
     :to="project.comingSoon ? undefined : `/work`"
-    class="group block overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_10px_rgba(0,229,160,0.05)]"
     :class="large ? 'md:col-span-1' : ''"
   >
     <!-- Dot grid header -->
@@ -26,7 +27,7 @@ defineProps<{
         v-if="project.comingSoon"
         class="absolute bottom-4 left-4 rounded-full bg-background/80 px-3 py-1 font-mono text-xs font-medium text-muted-foreground backdrop-blur-sm"
       >
-        Coming soon
+        Segera hadir
       </div>
     </div>
 
@@ -42,5 +43,5 @@ defineProps<{
         <TagBadge v-for="tag in project.tags" :key="tag" :label="tag" />
       </div>
     </div>
-  </NuxtLink>
+  </AppCard>
 </template>

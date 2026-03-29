@@ -13,207 +13,208 @@ export const projects: Project[] = [
     slug: "nexagen",
     name: "NexaGen",
     description:
-      "From fragmentation to fusion: Breaking down the complexities of data management",
-    tags: ["UX Research", "Brand Strategy", "Visual Identity"],
+      "Dari fragmentasi ke fusi: Mengurai kompleksitas manajemen data",
+    tags: ["Riset UX", "Strategi Brand", "Identitas Visual"],
     featured: true,
   },
   {
     slug: "skybridge",
     name: "SkyBridge",
     description:
-      "Crafting a seamless communication strategy for the next generation of connectivity",
-    tags: ["Communication Strategy", "Branding", "UI Design"],
+      "Merancang strategi komunikasi seamless untuk generasi konektivitas berikutnya",
+    tags: ["Strategi Komunikasi", "Branding", "Desain UI"],
     featured: true,
   },
   {
     slug: "pulseflow",
     name: "PulseFlow",
-    description: "A new powerful and agile look to training analytics",
-    tags: ["Discovery", "Identity Development", "Brand Guidelines"],
+    description:
+      "Tampilan baru yang powerful dan agile untuk analitik pelatihan",
+    tags: ["Discovery", "Pengembangan Identitas", "Panduan Brand"],
     featured: true,
   },
   {
     slug: "dataprism",
     name: "DataPrism",
     description:
-      "Elevating the experience of the world's most accessible data analytics tool.",
-    tags: ["Market Research", "UI Design", "Product Design"],
+      "Meningkatkan pengalaman dari alat analitik data paling aksesibel di dunia.",
+    tags: ["Riset Pasar", "Desain UI", "Desain Produk"],
     featured: true,
   },
   {
     slug: "verdant",
     name: "Verdant",
     description:
-      "Repositioning a young supply chain company to compete with industry giants",
-    tags: ["Brand System", "UX Research", "Communication Strategy"],
+      "Memposisikan ulang perusahaan supply chain muda untuk bersaing dengan raksasa industri",
+    tags: ["Sistem Brand", "Riset UX", "Strategi Komunikasi"],
     featured: true,
   },
   {
     slug: "converso",
     name: "Converso",
     description:
-      "Elevating the product experience of the ecosystem that brings companies closer to their customers.",
-    tags: ["UX Research", "Product Innovation", "Interface Design"],
+      "Meningkatkan pengalaman produk dari ekosistem yang mendekatkan perusahaan dengan pelanggan mereka.",
+    tags: ["Riset UX", "Inovasi Produk", "Desain Antarmuka"],
     featured: true,
   },
   {
     slug: "luminarai",
     name: "LuminarAI",
-    description: "Pioneering Marketing with AI-Powered Audience Insights",
-    tags: ["UX Research", "UI Design", "Product Design"],
+    description: "Merintis pemasaran dengan insight audiens berbasis AI",
+    tags: ["Riset UX", "Desain UI", "Desain Produk"],
   },
   {
     slug: "forgehub",
     name: "ForgeHub",
     description:
-      "Driving conversation and connecting ideas which empower creators and brands",
-    tags: ["Brand Strategy", "Visual Identity", "Interface Design"],
+      "Mendorong percakapan dan menghubungkan ide yang memberdayakan kreator dan brand",
+    tags: ["Strategi Brand", "Identitas Visual", "Desain Antarmuka"],
   },
   {
     slug: "transglobe",
     name: "TransGlobe",
-    description:
-      "Shaping the future of transportation alongside a family of brands.",
-    tags: ["UX Design", "Family of Brands", "Interface Design"],
+    description: "Membentuk masa depan transportasi bersama keluarga brand.",
+    tags: ["Desain UX", "Keluarga Brand", "Desain Antarmuka"],
   },
   {
     slug: "cloudnova",
     name: "CloudNova",
     description:
-      "Unveiling a new visual identity and website for the architects of cost-effective cloud software.",
-    tags: ["UX Research", "Branding", "Website Design"],
+      "Mengungkap identitas visual dan website baru untuk arsitek software cloud yang hemat biaya.",
+    tags: ["Riset UX", "Branding", "Desain Website"],
   },
   {
     slug: "datazen",
     name: "DataZen",
     description:
-      "Empowering the Data-Driven Through Visually Appealing and Intuitively Functional Redesign",
-    tags: ["UX Research", "Brand Refresh", "UI Design"],
+      "Memberdayakan yang Data-Driven melalui redesain yang menarik secara visual dan intuitif secara fungsional",
+    tags: ["Riset UX", "Refresh Brand", "Desain UI"],
   },
   {
     slug: "edustack",
     name: "EduStack",
     description:
-      "Transforming the global EdTech industry with a new brand strategy and website.",
-    tags: ["Market Research", "Visual Identity", "Website Design"],
+      "Mentransformasi industri EdTech global dengan strategi brand dan website baru.",
+    tags: ["Riset Pasar", "Identitas Visual", "Desain Website"],
   },
   {
     slug: "medflow",
     name: "MedFlow",
     description:
-      "Revolutionizing digital healthcare through a strategic design partnership.",
-    tags: ["Product Design", "UX Research", "Prototyping"],
+      "Merevolusi kesehatan digital melalui kemitraan desain strategis.",
+    tags: ["Desain Produk", "Riset UX", "Prototyping"],
     comingSoon: true,
   },
   {
     slug: "codelaunch",
     name: "CodeLaunch",
     description:
-      "A bold new style and smooth experience for the world's leading no-code resource.",
-    tags: ["User Research", "Visual Identity", "Website Design"],
+      "Gaya baru yang berani dan pengalaman mulus untuk resource no-code terdepan di dunia.",
+    tags: ["Riset Pengguna", "Identitas Visual", "Desain Website"],
   },
   {
     slug: "pixelplay",
     name: "PixelPlay",
     description:
-      "Reimagining code learning with a touch of retro and plenty of character!",
-    tags: ["Discovery", "Visual Identity", "Illustrations"],
+      "Reimaginasi pembelajaran koding dengan sentuhan retro dan penuh karakter!",
+    tags: ["Discovery", "Identitas Visual", "Ilustrasi"],
   },
   {
     slug: "swiftship",
     name: "SwiftShip",
     description:
-      "From startup to grown up: building a scalable brand for a $1B valued shipping logistics provider.",
-    tags: ["Visual Identity", "Design System", "Website Design & CMS"],
+      "Dari startup ke dewasa: membangun brand yang scalable untuk penyedia logistik pengiriman senilai $1M.",
+    tags: ["Identitas Visual", "Sistem Desain", "Desain Website & CMS"],
   },
   {
     slug: "careercraft",
     name: "CareerCraft",
-    description: "Researching new ways to help people land their dream jobs.",
-    tags: ["UX Research", "Visual Identity", "Product Design"],
+    description:
+      "Meneliti cara baru membantu orang mendapatkan pekerjaan impian mereka.",
+    tags: ["Riset UX", "Identitas Visual", "Desain Produk"],
   },
   {
     slug: "mailpulse",
     name: "MailPulse",
     description:
-      "Revitalising the brand, product, and website for a premier automated marketing platform.",
-    tags: ["UX Research", "Visual Identity", "Website Design"],
+      "Merevitalisasi brand, produk, dan website untuk platform pemasaran otomatis terkemuka.",
+    tags: ["Riset UX", "Identitas Visual", "Desain Website"],
   },
   {
     slug: "fincloud",
     name: "FinCloud",
     description:
-      "Creating a visual identity and product for FinOps cloud innovator.",
-    tags: ["Discovery", "UX Design", "Visual Identity"],
+      "Membuat identitas visual dan produk untuk inovator cloud FinOps.",
+    tags: ["Discovery", "Desain UX", "Identitas Visual"],
   },
   {
     slug: "propwise",
     name: "PropWise",
     description:
-      "Enhancing the brand and end-to-end property experience for a leading prop-tech company.",
-    tags: ["UX Research", "Product Innovation", "Visual Identity"],
+      "Meningkatkan brand dan pengalaman properti end-to-end untuk perusahaan prop-tech terkemuka.",
+    tags: ["Riset UX", "Inovasi Produk", "Identitas Visual"],
   },
   {
     slug: "wellspring",
     name: "Wellspring",
     description:
-      "Partnering with healthcare researchers to improve patient communications.",
-    tags: ["Visual Identity", "Product Design", "Prototyping"],
+      "Bermitra dengan peneliti kesehatan untuk meningkatkan komunikasi pasien.",
+    tags: ["Identitas Visual", "Desain Produk", "Prototyping"],
   },
   {
     slug: "haven",
     name: "Haven",
-    description: "Building the world's best home buying experience.",
-    tags: ["Market Research", "Brand Guidelines", "Brand Messaging"],
+    description: "Membangun pengalaman pembelian rumah terbaik di dunia.",
+    tags: ["Riset Pasar", "Panduan Brand", "Pesan Brand"],
   },
   {
     slug: "capturely",
     name: "Capturely",
     description:
-      "Increasing conversion rates with a new brand strategy and website for a B2B lead capture platform.",
-    tags: ["Market Research", "Customer Research", "Identity Development"],
+      "Meningkatkan tingkat konversi dengan strategi brand dan website baru untuk platform penangkapan lead B2B.",
+    tags: ["Riset Pasar", "Riset Pelanggan", "Pengembangan Identitas"],
   },
   {
     slug: "learnhub",
     name: "LearnHub",
     description:
-      "Helping 100,000 creators share their knowledge through an innovative platform.",
-    tags: ["Product Design", "Design System", "CMS Integration"],
+      "Membantu 100.000 kreator berbagi pengetahuan melalui platform inovatif.",
+    tags: ["Desain Produk", "Sistem Desain", "Integrasi CMS"],
   },
   {
     slug: "amplifi",
     name: "Amplifi",
     description:
-      "Empowering influencers, ambassadors, and affiliates to do what they do best.",
-    tags: ["Market Research", "Brand Guidelines", "Brand Messaging"],
+      "Memberdayakan influencer, ambassador, dan afiliasi untuk melakukan yang terbaik.",
+    tags: ["Riset Pasar", "Panduan Brand", "Pesan Brand"],
   },
   {
     slug: "coworkx",
     name: "CoWorkX",
     description:
-      "Designing and reengineering a suite of apps to help build better coworking spaces.",
-    tags: ["UX Research", "iOS App Design", "Product Design"],
+      "Mendesain dan merekayasa ulang rangkaian aplikasi untuk membantu membangun ruang coworking yang lebih baik.",
+    tags: ["Riset UX", "Desain Aplikasi iOS", "Desain Produk"],
   },
   {
     slug: "spectra",
     name: "Spectra",
     description:
-      "Helping establish a premium software development agency with a new brand and website experience.",
-    tags: ["Visual Identity", "Design System", "Front-end Development"],
+      "Membantu membangun agensi pengembangan software premium dengan brand dan pengalaman website baru.",
+    tags: ["Identitas Visual", "Sistem Desain", "Pengembangan Front-end"],
   },
   {
     slug: "insureflow",
     name: "InsureFlow",
     description:
-      "Building a quote management system for agents and homeowners.",
-    tags: ["Product Design", "Prototyping", "Front-end Development"],
+      "Membangun sistem manajemen penawaran untuk agen dan pemilik rumah.",
+    tags: ["Desain Produk", "Prototyping", "Pengembangan Front-end"],
   },
   {
     slug: "launchpad",
     name: "LaunchPad",
     description:
-      "Levelling up the brand experience for an innovative startup incubator.",
-    tags: ["Brand Guidelines", "Visual Identity", "Website Design"],
+      "Meningkatkan pengalaman brand untuk inkubator startup yang inovatif.",
+    tags: ["Panduan Brand", "Identitas Visual", "Desain Website"],
   },
 ];
 

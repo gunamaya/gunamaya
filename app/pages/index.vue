@@ -1,39 +1,31 @@
 <script setup lang="ts">
 import { featuredProjects } from "~/data/projects";
 import { testimonials } from "~/data/testimonials";
-import { blogPosts } from "~/data/blog";
 
 useSeoMeta({
-  title: "Gunamaya — High-Performance Systems & AI Solutions",
-  ogTitle: "Gunamaya — High-Performance Systems & AI Solutions",
+  title: "Gunamaya — Sistem Berperforma Tinggi & Solusi AI",
+  ogTitle: "Gunamaya — Sistem Berperforma Tinggi & Solusi AI",
   description:
     "Kami membangun sistem high-performance, mengintegrasikan AI, dan merancang arsitektur teknologi yang scalable untuk enterprise dan startup.",
   ogDescription:
-    "Building high-performance systems & AI solutions for enterprise and startups.",
+    "Membangun sistem berperforma tinggi & solusi AI untuk enterprise dan startup.",
 });
-
-const stats = [
-  { value: "10+", label: "Tahun pengalaman di enterprise & startup." },
-  { value: "100K+", label: "Requests/second yang di-handle sistem kami." },
-  { value: "99.9%", label: "Uptime target untuk semua production system." },
-  { value: "6+", label: "Proyek flagship yang berhasil di-deliver." },
-];
 
 const services = [
   {
-    title: "Custom Software & High-Performance Backend",
+    title: "Software Kustom & Backend Berperforma Tinggi",
     description:
       "Membangun sistem yang bisa handle jutaan request dengan latency minimal. Dari microservices architecture sampai distributed systems.",
     icon: "lucide:server",
   },
   {
-    title: "AI Integration & Automation",
+    title: "Integrasi AI & Otomasi",
     description:
       "Mengintegrasikan machine learning, NLP, dan computer vision ke dalam sistem existing tanpa mengganggu operasional.",
     icon: "lucide:brain",
   },
   {
-    title: "Technology Consulting & Architecture",
+    title: "Konsultasi Teknologi & Arsitektur",
     description:
       "Advisory untuk pemilihan tech stack, arsitektur sistem, dan strategi teknis yang future-proof dan scalable.",
     icon: "lucide:puzzle",
@@ -41,10 +33,31 @@ const services = [
 ];
 
 const techStack = {
-  backend: ["Golang", "Node.js", "Python", "Rust", "Laravel"],
-  frontend: ["Vue.js", "Nuxt.js", "Inertia.js"],
-  infra: ["Kubernetes", "Docker", "GCP", "AWS"],
+  backend: [
+    { name: "Golang", icon: "simple-icons:go" },
+    { name: "Node.js", icon: "simple-icons:nodedotjs" },
+    { name: "Python", icon: "simple-icons:python" },
+    { name: "Rust", icon: "simple-icons:rust" },
+    { name: "Laravel", icon: "simple-icons:laravel" },
+  ],
+  frontend: [
+    { name: "Vue.js", icon: "simple-icons:vuedotjs" },
+    { name: "Nuxt.js", icon: "simple-icons:nuxtdotjs" },
+    { name: "Inertia.js", icon: "simple-icons:inertia" },
+  ],
+  infra: [
+    { name: "Kubernetes", icon: "simple-icons:kubernetes" },
+    { name: "Docker", icon: "simple-icons:docker" },
+    { name: "GCP", icon: "simple-icons:googlecloud" },
+    { name: "AWS", icon: "simple-icons:amazonwebservices" },
+  ],
 };
+
+const allTech = [
+  ...techStack.backend,
+  ...techStack.frontend,
+  ...techStack.infra,
+];
 </script>
 
 <template>
@@ -63,15 +76,7 @@ const techStack = {
 
       <div class="relative mx-auto max-w-7xl px-6 py-24">
         <div class="mx-auto max-w-3xl text-center">
-          <Motion
-            as="p"
-            class="mb-6 font-mono text-sm text-primary"
-            :initial="{ opacity: 0, y: 20 }"
-            :animate="{ opacity: 1, y: 0 }"
-            :transition="{ duration: 0.5 }"
-          >
-            // gunamaya.dev
-          </Motion>
+          <TypewriterLabel text="gunamaya.dev" trigger="animate" class="mb-6" />
           <Motion
             as="h1"
             class="font-serif text-4xl font-bold leading-[1.1] tracking-tight text-foreground md:text-6xl lg:text-7xl"
@@ -79,13 +84,11 @@ const techStack = {
             :animate="{ opacity: 1, y: 0 }"
             :transition="{ duration: 0.6, delay: 0.1 }"
           >
-            Building
-            <span class="gradient-text">High-Performance</span>
-            Systems &
-            <span class="gradient-text">AI</span> Solutions<span
-              class="text-primary"
-              >.</span
-            >
+            Membangun Sistem
+            <span class="gradient-text">Berperforma Tinggi</span>
+            & Solusi
+            <span class="gradient-text">AI</span
+            ><span class="text-primary">.</span>
           </Motion>
           <Motion
             as="p"
@@ -105,74 +108,43 @@ const techStack = {
             :animate="{ opacity: 1, y: 0 }"
             :transition="{ duration: 0.5, delay: 0.3 }"
           >
-            <NuxtLink
-              to="/contact"
-              class="btn-aurora inline-flex items-center rounded-full px-8 py-3.5 text-base font-medium text-primary-foreground"
-            >
-              <span class="btn-aurora-content" data-text="Book a Consultation">
-                <span
-                  >Book a Consultation
-                  <svg
-                    class="inline h-4 w-4"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M7 17L17 7M17 7H7M17 7v10"
-                    /></svg
-                ></span>
-              </span>
-            </NuxtLink>
-            <NuxtLink
-              to="/work"
-              class="inline-flex items-center gap-2 rounded-full border border-border px-8 py-3.5 text-base font-medium text-foreground transition-all hover:border-primary/50"
-            >
-              View Portfolio
-              <svg
-                class="h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </NuxtLink>
+            <AppButton to="/contact" label="Mari Berkolaborasi">
+              Mari Berkolaborasi
+            </AppButton>
+            <AppButton to="/work" variant="outline">
+              Lihat Portofolio
+            </AppButton>
           </Motion>
         </div>
       </div>
     </section>
 
-    <!-- Stats Strip -->
-    <section class="border-y border-border">
+    <!-- Tech Logo Marquee -->
+    <section class="relative border-y border-border overflow-hidden">
+      <!-- Fade edges -->
       <div
-        class="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-6 py-16 md:grid-cols-4 lg:px-8"
-      >
-        <Motion
-          as="div"
-          v-for="(stat, i) in stats"
-          :key="stat.value"
-          :initial="{ opacity: 0, y: 24 }"
-          :whileInView="{ opacity: 1, y: 0 }"
-          :inViewOptions="{ once: true }"
-          :transition="{ duration: 0.5, delay: i * 0.1 }"
-        >
-          <StatCounter :value="stat.value" :label="stat.label" />
-        </Motion>
+        class="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-linear-to-r from-background to-transparent"
+      />
+      <div
+        class="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-linear-to-l from-background to-transparent"
+      />
+      <div class="mx-auto max-w-7xl py-10">
+        <!-- Scrolling track -->
+        <div class="flex animate-scroll-left w-max gap-10 items-center">
+          <div v-for="tech in allTech" :key="tech.name" class="px-3">
+            <Icon :name="tech.icon" class="h-7 w-7 text-muted-foreground/50" />
+          </div>
+          <!-- Duplicate for seamless loop -->
+          <div v-for="tech in allTech" :key="tech.name + '-dup'" class="px-3">
+            <Icon :name="tech.icon" class="h-7 w-7 text-muted-foreground/50" />
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Services Section -->
     <section class="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-      <SectionHeading title="What we build" label="// services" />
+      <SectionHeading title="Yang kami bangun" label="// layanan" />
       <div class="grid gap-6 md:grid-cols-3">
         <Motion
           as="div"
@@ -198,9 +170,9 @@ const techStack = {
     <section class="border-y border-border">
       <div class="mx-auto max-w-7xl px-6 py-24 lg:px-8">
         <SectionHeading
-          title="Our work"
-          subtitle="proven results"
-          label="// portfolio"
+          title="Karya kami"
+          subtitle="hasil terbukti"
+          label="// portofolio"
         />
         <div class="grid gap-6 md:grid-cols-2">
           <Motion
@@ -217,11 +189,8 @@ const techStack = {
           </Motion>
         </div>
         <div class="mt-12 text-center">
-          <NuxtLink
-            to="/work"
-            class="inline-flex items-center gap-2 rounded-full border border-border px-8 py-3 text-sm font-medium text-foreground transition-all hover:border-primary/50 hover:text-primary"
-          >
-            View All Projects
+          <AppButton to="/work" variant="outline" size="sm">
+            Lihat Semua Proyek
             <svg
               class="h-4 w-4"
               fill="none"
@@ -235,85 +204,15 @@ const techStack = {
                 d="M17 8l4 4m0 0l-4 4m4-4H3"
               />
             </svg>
-          </NuxtLink>
+          </AppButton>
         </div>
-      </div>
-    </section>
-
-    <!-- Tech Stack Section -->
-    <section class="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-      <SectionHeading title="Tech Stack" label="// tools we use" />
-      <div class="grid gap-8 md:grid-cols-3">
-        <Motion
-          as="div"
-          class="rounded-2xl border border-border bg-card p-6"
-          :initial="{ opacity: 0, y: 30 }"
-          :whileInView="{ opacity: 1, y: 0 }"
-          :inViewOptions="{ once: true }"
-          :transition="{ duration: 0.5 }"
-        >
-          <h3 class="mb-4 font-mono text-sm font-semibold text-primary">
-            Backend
-          </h3>
-          <div class="flex flex-wrap gap-2">
-            <span
-              v-for="tech in techStack.backend"
-              :key="tech"
-              class="rounded-lg bg-secondary px-3 py-1.5 font-mono text-sm text-foreground"
-            >
-              {{ tech }}
-            </span>
-          </div>
-        </Motion>
-        <Motion
-          as="div"
-          class="rounded-2xl border border-border bg-card p-6"
-          :initial="{ opacity: 0, y: 30 }"
-          :whileInView="{ opacity: 1, y: 0 }"
-          :inViewOptions="{ once: true }"
-          :transition="{ duration: 0.5, delay: 0.1 }"
-        >
-          <h3 class="mb-4 font-mono text-sm font-semibold text-primary">
-            Frontend
-          </h3>
-          <div class="flex flex-wrap gap-2">
-            <span
-              v-for="tech in techStack.frontend"
-              :key="tech"
-              class="rounded-lg bg-secondary px-3 py-1.5 font-mono text-sm text-foreground"
-            >
-              {{ tech }}
-            </span>
-          </div>
-        </Motion>
-        <Motion
-          as="div"
-          class="rounded-2xl border border-border bg-card p-6"
-          :initial="{ opacity: 0, y: 30 }"
-          :whileInView="{ opacity: 1, y: 0 }"
-          :inViewOptions="{ once: true }"
-          :transition="{ duration: 0.5, delay: 0.2 }"
-        >
-          <h3 class="mb-4 font-mono text-sm font-semibold text-primary">
-            Infrastructure
-          </h3>
-          <div class="flex flex-wrap gap-2">
-            <span
-              v-for="tech in techStack.infra"
-              :key="tech"
-              class="rounded-lg bg-secondary px-3 py-1.5 font-mono text-sm text-foreground"
-            >
-              {{ tech }}
-            </span>
-          </div>
-        </Motion>
       </div>
     </section>
 
     <!-- Testimonials Section -->
     <section class="border-y border-border">
       <div class="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-        <SectionHeading title="What clients say" label="// testimonials" />
+        <SectionHeading title="Kata klien kami" label="// testimoni" />
         <div class="grid gap-6 md:grid-cols-2">
           <Motion
             as="div"
@@ -327,46 +226,6 @@ const techStack = {
             <TestimonialCard :testimonial="testimonial" />
           </Motion>
         </div>
-      </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section class="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-      <div class="mb-12 flex items-center justify-between">
-        <SectionHeading title="Engineering Blog" label="// latest posts" />
-        <NuxtLink
-          to="/blog"
-          class="hidden items-center gap-2 text-sm font-medium text-primary transition-opacity hover:opacity-70 md:inline-flex"
-        >
-          All Posts
-          <svg
-            class="h-4 w-4"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M17 8l4 4m0 0l-4 4m4-4H3"
-            />
-          </svg>
-        </NuxtLink>
-      </div>
-      <div class="grid gap-6 md:grid-cols-3">
-        <Motion
-          as="div"
-          v-for="(post, i) in blogPosts.slice(0, 3)"
-          :key="post.slug"
-          :initial="{ opacity: 0, y: 30 }"
-          :whileInView="{ opacity: 1, y: 0 }"
-          :inViewOptions="{ once: true, amount: 0.1 }"
-          :transition="{ duration: 0.5, delay: i * 0.1 }"
-          :whileHover="{ y: -4, transition: { duration: 0.2 } }"
-        >
-          <BlogCard :post="post" />
-        </Motion>
       </div>
     </section>
   </div>

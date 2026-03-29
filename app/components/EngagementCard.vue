@@ -8,9 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <div
-    class="group flex flex-1 flex-col rounded-2xl border border-border bg-card p-8 transition-all duration-300 hover:border-primary/30"
-  >
+  <AppCard variant="interactive" class="group flex flex-1 flex-col">
     <h3 class="font-serif text-2xl font-bold text-foreground">{{ title }}</h3>
     <p class="mt-2 font-mono text-sm font-medium text-primary/70">
       {{ subtitle }}
@@ -22,7 +20,7 @@ defineProps<{
       :to="link"
       class="mt-8 inline-flex items-center gap-2 text-sm font-medium text-primary transition-opacity hover:opacity-70"
     >
-      Learn More
+      Selengkapnya
       <svg
         class="h-4 w-4"
         fill="none"
@@ -37,5 +35,5 @@ defineProps<{
         />
       </svg>
     </NuxtLink>
-  </div>
+  </AppCard>
 </template>

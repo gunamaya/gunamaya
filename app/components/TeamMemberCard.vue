@@ -7,13 +7,17 @@ defineProps<{
 </script>
 
 <template>
-  <div
-    class="group rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:border-primary/30"
-  >
+  <AppCard variant="interactive" padding="sm">
     <div
-      class="mb-4 flex h-16 w-16 items-center justify-center rounded-xl bg-primary/10"
+      class="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10"
     >
-      <span class="font-mono text-xl font-bold text-primary">
+      <img
+        v-if="member.user"
+        :src="'https://github.com/' + member.user + '.png'"
+        alt="Avatar"
+        class="rounded-full"
+      />
+      <span v-else class="font-mono text-xl font-bold text-primary">
         {{
           member.name
             .split(" ")
@@ -30,5 +34,5 @@ defineProps<{
     >
       {{ (member as any).description }}
     </p>
-  </div>
+  </AppCard>
 </template>

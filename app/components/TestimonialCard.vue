@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="rounded-2xl border border-border bg-card p-8">
+  <AppCard>
     <span class="mb-4 block font-serif text-3xl text-primary">"</span>
     <blockquote class="text-base leading-relaxed text-foreground/90">
       {{ testimonial.quote }}
@@ -34,5 +34,5 @@ defineProps<{
         </p>
       </div>
     </div>
-  </div>
+  </AppCard>
 </template>

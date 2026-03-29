@@ -9,9 +9,7 @@ defineProps<{
 </script>
 
 <template>
-  <div
-    class="rounded-2xl border border-border bg-card p-8 transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_10px_rgba(0,229,160,0.05)]"
-  >
+  <AppCard variant="interactive">
     <div
       v-if="icon"
       class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10"
@@ -27,7 +25,7 @@ defineProps<{
       :to="link"
       class="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary transition-opacity hover:opacity-70"
     >
-      {{ linkLabel || "Learn More" }}
+      {{ linkLabel || "Selengkapnya" }}
       <svg
         class="h-4 w-4"
         fill="none"
@@ -42,5 +40,5 @@ defineProps<{
         />
       </svg>
     </NuxtLink>
-  </div>
+  </AppCard>
 </template>

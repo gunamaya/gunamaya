@@ -1,24 +1,25 @@
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   title: string;
   subtitle?: string;
   label?: string;
 }>();
+
+const labelText = computed(() =>
+  props.label ? props.label.replace(/^\/\/\s*/, "") : "",
+);
 </script>
 
 <template>
   <div class="mb-12">
-    <Motion as="p"
+    <TypewriterLabel
       v-if="label"
-      class="mb-3 font-mono text-sm text-primary"
-      :initial="{ opacity: 0, y: 16 }"
-      :whileInView="{ opacity: 1, y: 0 }"
-      :inViewOptions="{ once: true }"
-      :transition="{ duration: 0.5 }"
-    >
-      {{ label }}
-    </Motion>
-    <Motion as="h2"
+      :text="labelText"
+      trigger="inView"
+      class="mb-3"
+    />
+    <Motion
+      as="h2"
       class="font-serif text-3xl font-bold leading-tight text-foreground md:text-4xl lg:text-5xl"
       :initial="{ opacity: 0, y: 20 }"
       :whileInView="{ opacity: 1, y: 0 }"

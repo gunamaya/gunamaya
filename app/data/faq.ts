@@ -5,44 +5,44 @@ export interface FaqItem {
 
 export const faq: FaqItem[] = [
   {
-    question: "What is the difference between the Finite and Infinite models?",
+    question: "Apa perbedaan antara model Finite dan Infinite?",
     answer:
-      "The Finite model is designed for projects with a clear scope, timeline, and budget, offering a fixed-price approach ideal for specific, time-bound objectives. The Infinite model provides ongoing collaboration with a flexible, scalable setup, perfect for long-term partnerships where needs may evolve over time.",
+      "Model Finite dirancang untuk proyek dengan scope, timeline, dan anggaran yang jelas, menawarkan pendekatan harga tetap yang ideal untuk tujuan spesifik dan terbatas waktu. Model Infinite menyediakan kolaborasi berkelanjutan dengan setup yang fleksibel dan scalable, cocok untuk kemitraan jangka panjang di mana kebutuhan dapat berkembang seiring waktu.",
   },
   {
-    question: "What is your unique strength as an agency?",
+    question: "Apa keunggulan unik Gunamaya sebagai agensi?",
     answer:
-      "Our unique strength lies in our holistic approach across Brand, Website, and Product. We seamlessly integrate strategy, design, and development to deliver cohesive digital experiences that drive meaningful business growth.",
-  },
-  {
-    question: "What type of clients do you normally collaborate with?",
-    answer:
-      "We work with a diverse range of clients, from startups and SMEs to Fortune 500 companies. Our experience allows us to navigate corporate structures and limitations while also embracing the agility and innovation of startups.",
-  },
-  {
-    question: "How do you handle collaboration across time zones?",
-    answer:
-      "We turn time zones into an advantage through a collaborative ecosystem that includes weekly meetings, daily check-ins, and asynchronous updates. This ensures seamless progress and clear communication, no matter where your team is located.",
+      "Keunggulan unik kami terletak pada pendekatan holistik di seluruh Brand, Website, dan Produk. Kami mengintegrasikan strategi, desain, dan pengembangan secara seamless untuk menghasilkan pengalaman digital yang kohesif dan mendorong pertumbuhan bisnis yang bermakna.",
   },
   {
     question:
-      "What is the typical process for starting a project with Gunamaya?",
+      "Tipe klien seperti apa yang biasanya berkolaborasi dengan Gunamaya?",
     answer:
-      "We start with a discovery call to understand your needs and recommend the best engagement model. Once we define the project scope, we assemble the ideal team, create a detailed plan, and kick off the project with clear milestones and timelines.",
+      "Kami bekerja dengan berbagai macam klien, dari startup dan UKM hingga perusahaan Fortune 500. Pengalaman kami memungkinkan kami menavigasi struktur dan batasan korporat sekaligus merangkul kelincahan dan inovasi dari startup.",
   },
   {
-    question: "How flexible are your engagement models?",
+    question: "Bagaimana kalian menangani kolaborasi lintas zona waktu?",
     answer:
-      "Our engagement models are highly flexible — one of our core strengths is the ability to pivot directions. Whether you're working within strict parameters or need the ability to pivot as new challenges arise, we can adapt our approach to meet your evolving needs.",
+      "Kami menjadikan zona waktu sebagai keuntungan melalui ekosistem kolaboratif yang mencakup meeting mingguan, check-in harian, dan update asinkron. Ini memastikan progress yang lancar dan komunikasi yang jelas, di mana pun tim Anda berada.",
   },
   {
-    question: "What kind of project management setup do you offer?",
+    question: "Bagaimana proses tipikal untuk memulai proyek dengan Gunamaya?",
     answer:
-      "We provide a dedicated Project Manager as your single point of contact throughout the project. Additionally, our Client Dashboard offers real-time insights into project progress, resource allocation, and next steps, ensuring full transparency.",
+      "Kami memulai dengan discovery call untuk memahami kebutuhan Anda dan merekomendasikan model kerja sama terbaik. Setelah scope proyek ditentukan, kami menyusun tim ideal, membuat rencana detail, dan memulai proyek dengan milestone dan timeline yang jelas.",
   },
   {
-    question: "What kind of results do you bring to the table?",
+    question: "Seberapa fleksibel model kerja sama yang ditawarkan?",
     answer:
-      "We deliver impactful results, such as helping SwiftShip raise $268 million post-rebrand and website launch, and increasing demo requests for TransGlobe by 39% within 9 months of their new website launch. Our holistic approach ensures that your digital presence drives significant business growth.",
+      "Model kerja sama kami sangat fleksibel — salah satu kekuatan inti kami adalah kemampuan untuk pivot arah. Baik Anda bekerja dalam parameter ketat atau membutuhkan kemampuan untuk pivot saat tantangan baru muncul, kami dapat menyesuaikan pendekatan untuk memenuhi kebutuhan Anda yang terus berkembang.",
+  },
+  {
+    question: "Seperti apa setup manajemen proyek yang ditawarkan?",
+    answer:
+      "Kami menyediakan Project Manager dedikasi sebagai single point of contact Anda sepanjang proyek. Selain itu, Client Dashboard kami menawarkan insight real-time tentang progress proyek, alokasi sumber daya, dan langkah selanjutnya, memastikan transparansi penuh.",
+  },
+  {
+    question: "Hasil seperti apa yang bisa diharapkan?",
+    answer:
+      "Kami menghasilkan dampak signifikan, seperti membantu SwiftShip mengumpulkan $268 juta pasca-rebrand dan peluncuran website, serta meningkatkan permintaan demo TransGlobe sebesar 39% dalam 9 bulan setelah peluncuran website baru. Pendekatan holistik kami memastikan kehadiran digital Anda mendorong pertumbuhan bisnis yang signifikan.",
   },
 ];

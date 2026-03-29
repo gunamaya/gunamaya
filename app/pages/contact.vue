@@ -1,10 +1,10 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: "Contact — Gunamaya",
-  ogTitle: "Contact — Gunamaya",
+  title: "Kontak — Gunamaya",
+  ogTitle: "Kontak — Gunamaya",
   description:
-    "Book a strategic consultation untuk diskusikan kebutuhan AI, backend, dan arsitektur teknologi Anda.",
-  ogDescription: "Book a strategic consultation dengan tim Gunamaya.",
+    "Jadwalkan konsultasi strategis untuk diskusikan kebutuhan AI, backend, dan arsitektur teknologi Anda.",
+  ogDescription: "Jadwalkan konsultasi strategis dengan tim Gunamaya.",
 });
 
 const form = reactive({
@@ -16,11 +16,11 @@ const form = reactive({
 });
 
 const projectTypes = [
-  "Custom Software Development",
-  "AI Integration & Automation",
-  "Technology Consulting",
-  "System Architecture Review",
-  "Other",
+  "Pengembangan Software Kustom",
+  "Integrasi AI & Otomasi",
+  "Konsultasi Teknologi",
+  "Review Arsitektur Sistem",
+  "Lainnya",
 ];
 
 function handleSubmit() {
@@ -33,15 +33,7 @@ function handleSubmit() {
     <!-- Hero -->
     <section class="pt-32 pb-16">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <Motion
-          as="p"
-          class="mb-6 font-mono text-sm text-primary"
-          :initial="{ opacity: 0, y: 20 }"
-          :animate="{ opacity: 1, y: 0 }"
-          :transition="{ duration: 0.5 }"
-        >
-          // contact
-        </Motion>
+        <TypewriterLabel text="kontak" trigger="animate" class="mb-6" />
         <Motion
           as="h1"
           class="max-w-3xl font-serif text-4xl font-bold leading-[1.1] tracking-tight text-foreground md:text-6xl lg:text-7xl"
@@ -49,8 +41,8 @@ function handleSubmit() {
           :animate="{ opacity: 1, y: 0 }"
           :transition="{ duration: 0.6, delay: 0.1 }"
         >
-          Book a Strategic
-          <span class="gradient-text">Consultation</span>
+          Jadwalkan
+          <span class="gradient-text">Konsultasi</span> Strategis
         </Motion>
         <Motion
           as="p"
@@ -81,7 +73,7 @@ function handleSubmit() {
               <label
                 for="name"
                 class="mb-2 block font-mono text-sm font-medium text-foreground"
-                >Name</label
+                >Nama</label
               >
               <input
                 id="name"
@@ -89,7 +81,7 @@ function handleSubmit() {
                 type="text"
                 required
                 class="w-full border-b border-border bg-transparent py-3 text-foreground outline-none placeholder:text-muted-foreground/50 focus:border-primary"
-                placeholder="Your name"
+                placeholder="Nama Anda"
               />
             </div>
 
@@ -113,14 +105,14 @@ function handleSubmit() {
               <label
                 for="company"
                 class="mb-2 block font-mono text-sm font-medium text-foreground"
-                >Company</label
+                >Perusahaan</label
               >
               <input
                 id="company"
                 v-model="form.company"
                 type="text"
                 class="w-full border-b border-border bg-transparent py-3 text-foreground outline-none placeholder:text-muted-foreground/50 focus:border-primary"
-                placeholder="Your company name"
+                placeholder="Nama perusahaan Anda"
               />
             </div>
 
@@ -128,7 +120,7 @@ function handleSubmit() {
               <label
                 for="projectType"
                 class="mb-2 block font-mono text-sm font-medium text-foreground"
-                >Project Type</label
+                >Jenis Proyek</label
               >
               <select
                 id="projectType"
@@ -140,7 +132,7 @@ function handleSubmit() {
                   disabled
                   class="bg-background text-muted-foreground"
                 >
-                  Select project type
+                  Pilih jenis proyek
                 </option>
                 <option
                   v-for="opt in projectTypes"
@@ -157,7 +149,7 @@ function handleSubmit() {
               <label
                 for="message"
                 class="mb-2 block font-mono text-sm font-medium text-foreground"
-                >Tell us about your project</label
+                >Ceritakan tentang proyek Anda</label
               >
               <textarea
                 id="message"
@@ -165,18 +157,11 @@ function handleSubmit() {
                 required
                 rows="5"
                 class="w-full resize-none border-b border-border bg-transparent py-3 text-foreground outline-none placeholder:text-muted-foreground/50 focus:border-primary"
-                placeholder="Describe your project, technical challenges, and goals..."
+                placeholder="Jelaskan proyek, tantangan teknis, dan tujuan Anda..."
               />
             </div>
 
-            <button
-              type="submit"
-              class="btn-aurora inline-block rounded-full px-8 py-3.5 text-base font-medium text-primary-foreground"
-            >
-              <span class="btn-aurora-content" data-text="Send Message">
-                <span>Send Message</span>
-              </span>
-            </button>
+            <AppButton type="submit" label="Kirim Pesan" as="button" />
           </form>
         </Motion>
 
@@ -195,15 +180,15 @@ function handleSubmit() {
                 Email
               </h3>
               <a
-                href="mailto:hello@gunamaya.com"
+                href="mailto:we@gunamaya.id"
                 class="mt-2 block text-foreground transition-colors hover:text-primary"
               >
-                hello@gunamaya.com
+                we@gunamaya.id
               </a>
             </div>
             <div>
               <h3 class="font-mono text-sm font-semibold text-primary">
-                WhatsApp Business
+                WhatsApp Bisnis
               </h3>
               <a
                 href="https://wa.me/6281234567890"
@@ -216,7 +201,7 @@ function handleSubmit() {
             </div>
             <div>
               <h3 class="font-mono text-sm font-semibold text-primary">
-                Connect
+                Terhubung
               </h3>
               <div class="mt-3 flex flex-col gap-2">
                 <a
@@ -242,13 +227,13 @@ function handleSubmit() {
                 >
               </div>
             </div>
-            <div class="rounded-2xl border border-border bg-card p-6">
+            <AppCard padding="sm">
               <p class="font-mono text-xs text-primary">// response time</p>
               <p class="mt-2 text-sm text-muted-foreground">
                 Kami biasanya merespons dalam 24 jam di hari kerja. Untuk urgent
                 request, gunakan WhatsApp.
               </p>
-            </div>
+            </AppCard>
           </div>
         </Motion>
       </div>
