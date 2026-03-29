@@ -101,7 +101,7 @@ onUnmounted(() => {
       <!-- Desktop CTA -->
       <div class="hidden lg:flex">
         <AppButton
-          to="mailto:we@gunamaya.id"
+          to="mailto:official@gunamaya.id"
           size="sm"
           label="Mari Berkolaborasi"
         />
@@ -154,7 +154,7 @@ onUnmounted(() => {
             {{ link.label }}
           </NuxtLink>
           <AppButton
-            to="mailto:we@gunamaya.id"
+            to="mailto:official@gunamaya.id"
             size="lg"
             label="Mari Berkolaborasi"
             class="mt-4"

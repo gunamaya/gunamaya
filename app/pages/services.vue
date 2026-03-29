@@ -255,7 +255,7 @@ function toggleFaq(index: number) {
               :title="model.title"
               :subtitle="model.subtitle"
               :description="model.description"
-              link="mailto:we@gunamaya.id"
+              link="mailto:official@gunamaya.id"
             />
           </Motion>
         </div>

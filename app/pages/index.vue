@@ -108,7 +108,10 @@ const allTech = [
             :animate="{ opacity: 1, y: 0 }"
             :transition="{ duration: 0.5, delay: 0.3 }"
           >
-            <AppButton to="mailto:we@gunamaya.id" label="Mari Berkolaborasi">
+            <AppButton
+              to="mailto:official@gunamaya.id"
+              label="Mari Berkolaborasi"
+            >
               Mari Berkolaborasi
             </AppButton>
             <AppButton to="/work" variant="outline">

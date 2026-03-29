@@ -45,7 +45,7 @@ const navigationLinks = [
           :transition="{ duration: 0.5, delay: 0.3 }"
         >
           <AppButton
-            to="mailto:we@gunamaya.id"
+            to="mailto:official@gunamaya.id"
             label="Jadwalkan Konsultasi Strategis"
           />
         </Motion>
@@ -98,10 +98,10 @@ const navigationLinks = [
 
           <!-- Email -->
           <a
-            href="mailto:we@gunamaya.id"
+            href="mailto:official@gunamaya.id"
             class="text-sm text-foreground/70 transition-colors hover:text-primary"
           >
-            we@gunamaya.id
+            official@gunamaya.id
           </a>
         </div>
       </div>
