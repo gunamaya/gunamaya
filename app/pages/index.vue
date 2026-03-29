@@ -13,13 +13,13 @@ useSeoMeta({
 
 const services = [
   {
-    title: "Software Kustom & Backend Berperforma Tinggi",
+    title: "Software Kustom Berperforma Tinggi",
     description:
-      "Membangun sistem yang bisa handle jutaan request dengan latency minimal. Dari microservices architecture sampai distributed systems.",
+      "Sistem yang bisa handle jutaan request dengan latency minimal. Dari microservices architecture sampai distributed systems.",
     icon: "lucide:server",
   },
   {
-    title: "Integrasi AI & Otomasi",
+    title: "Integrasi Artificial Intelligence & Otomasi",
     description:
       "Mengintegrasikan machine learning, NLP, dan computer vision ke dalam sistem existing tanpa mengganggu operasional.",
     icon: "lucide:brain",
@@ -108,7 +108,7 @@ const allTech = [
             :animate="{ opacity: 1, y: 0 }"
             :transition="{ duration: 0.5, delay: 0.3 }"
           >
-            <AppButton to="/contact" label="Mari Berkolaborasi">
+            <AppButton to="mailto:we@gunamaya.id" label="Mari Berkolaborasi">
               Mari Berkolaborasi
             </AppButton>
             <AppButton to="/work" variant="outline">

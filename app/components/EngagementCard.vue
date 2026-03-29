@@ -16,8 +16,8 @@ defineProps<{
     <p class="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
       {{ description }}
     </p>
-    <NuxtLink
-      :to="link"
+    <a
+      :href="link"
       class="mt-8 inline-flex items-center gap-2 text-sm font-medium text-primary transition-opacity hover:opacity-70"
     >
       Selengkapnya
@@ -34,6 +34,6 @@ defineProps<{
           d="M17 8l4 4m0 0l-4 4m4-4H3"
         />
       </svg>
-    </NuxtLink>
+    </a>
   </AppCard>
 </template>

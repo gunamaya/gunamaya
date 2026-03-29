@@ -100,7 +100,11 @@ onUnmounted(() => {
 
       <!-- Desktop CTA -->
       <div class="hidden lg:flex">
-        <AppButton to="/contact" size="sm" label="Mari Berkolaborasi" />
+        <AppButton
+          to="mailto:we@gunamaya.id"
+          size="sm"
+          label="Mari Berkolaborasi"
+        />
       </div>
 
       <!-- Mobile Hamburger -->
@@ -150,7 +154,7 @@ onUnmounted(() => {
             {{ link.label }}
           </NuxtLink>
           <AppButton
-            to="/contact"
+            to="mailto:we@gunamaya.id"
             size="lg"
             label="Mari Berkolaborasi"
             class="mt-4"

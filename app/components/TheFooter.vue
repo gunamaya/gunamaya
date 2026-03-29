@@ -44,7 +44,10 @@ const navigationLinks = [
           :inViewOptions="{ once: true }"
           :transition="{ duration: 0.5, delay: 0.3 }"
         >
-          <AppButton to="/contact" label="Jadwalkan Konsultasi Strategis" />
+          <AppButton
+            to="mailto:we@gunamaya.id"
+            label="Jadwalkan Konsultasi Strategis"
+          />
         </Motion>
       </section>
     </div>

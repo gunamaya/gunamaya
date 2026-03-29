@@ -40,12 +40,21 @@ const props = defineProps<{
 const classes = computed(() =>
   cn(buttonVariants({ variant: props.variant, size: props.size }), props.class),
 );
+const isExternal = computed(
+  () => props.to?.startsWith("http") || props.to?.startsWith("mailto:"),
+);
 </script>
 
 <template>
   <component
-    :is="to ? NuxtLink : as || 'button'"
-    :to="to"
+    :is="
+      to ?
+        isExternal ? 'a'
+        : NuxtLink
+      : as || 'button'
+    "
+    :to="to && !isExternal ? to : undefined"
+    :href="isExternal ? to : undefined"
     :type="!to && (as || 'button') === 'button' ? type || 'button' : undefined"
     :class="classes"
   >

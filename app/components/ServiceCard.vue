@@ -12,9 +12,9 @@ defineProps<{
   <AppCard variant="interactive">
     <div
       v-if="icon"
-      class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10"
+      class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-primary-foreground"
     >
-      <Icon :name="icon" class="h-6 w-6 text-primary" />
+      <Icon :name="icon" class="h-6 w-6" />
     </div>
     <h3 class="font-serif text-2xl font-bold text-foreground">{{ title }}</h3>
     <p class="mt-4 text-sm leading-relaxed text-muted-foreground">
