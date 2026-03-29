@@ -132,11 +132,17 @@ const allTech = [
         <!-- Scrolling track -->
         <div class="flex animate-scroll-left w-max gap-10 items-center">
           <div v-for="tech in allTech" :key="tech.name" class="px-3">
-            <Icon :name="tech.icon" class="h-9 w-9 text-muted-foreground/50 transition-colors duration-300 hover:text-primary" />
+            <Icon
+              :name="tech.icon"
+              class="h-9 w-9 text-muted-foreground/50 transition-colors duration-300 hover:text-primary"
+            />
           </div>
           <!-- Duplicate for seamless loop -->
           <div v-for="tech in allTech" :key="tech.name + '-dup'" class="px-3">
-            <Icon :name="tech.icon" class="h-9 w-9 text-muted-foreground/50 transition-colors duration-300 hover:text-primary" />
+            <Icon
+              :name="tech.icon"
+              class="h-9 w-9 text-muted-foreground/50 transition-colors duration-300 hover:text-primary"
+            />
           </div>
         </div>
       </div>

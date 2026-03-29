@@ -226,7 +226,10 @@ function toggleFaq(index: number) {
                 :key="tech.name"
                 class="group/tech inline-flex items-center gap-2 rounded-lg bg-secondary px-3 py-1.5 font-mono text-xs text-foreground transition-colors duration-200 hover:text-primary"
               >
-                <Icon :name="tech.icon" class="h-4 w-4 text-muted-foreground transition-colors duration-200 group-hover/tech:text-primary" />
+                <Icon
+                  :name="tech.icon"
+                  class="h-4 w-4 text-muted-foreground transition-colors duration-200 group-hover/tech:text-primary"
+                />
                 {{ tech.name }}
               </span>
             </div>

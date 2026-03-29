@@ -16,10 +16,10 @@ defineProps<{
   >
     <!-- Dot grid header -->
     <div
-      class="relative aspect-video w-full overflow-hidden bg-secondary dot-grid"
+      class="relative w-full overflow-hidden bg-linear-to-r from-primary/10 aspect-20/9 to-primary/5"
     >
       <div class="flex h-full items-center justify-center">
-        <span class="font-mono text-2xl font-bold text-primary/20">
+        <span class="font-mono text-2xl font-bold text-primary">
           {{ project.name }}
         </span>
       </div>

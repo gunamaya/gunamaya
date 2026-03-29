@@ -25,6 +25,22 @@ export const projects: Project[] = [
     tags: ["Pemerintahan", "Aplikasi Web", "Pembangunan Daerah"],
     featured: true,
   },
+  {
+    slug: "bnu",
+    name: "BNU",
+    description:
+      "Platform digital untuk BNI Corporate University — mendukung pengembangan kompetensi dan pembelajaran karyawan secara terpusat.",
+    tags: ["Corporate Learning", "Enterprise", "Aplikasi Web"],
+    featured: true,
+  },
+  {
+    slug: "sibad",
+    name: "SIBAD",
+    description:
+      "Sistem informasi internal untuk manajemen aplikasi — menyederhanakan pengelolaan dan monitoring aplikasi dalam satu dashboard.",
+    tags: ["Internal Tools", "Manajemen Aplikasi", "Dashboard"],
+    featured: true,
+  },
 ];
 
 export const featuredProjects = projects.filter((p) => p.featured);
