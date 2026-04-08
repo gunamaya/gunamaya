@@ -76,7 +76,7 @@ const allTech = [
 
       <div class="relative mx-auto max-w-7xl px-6 py-24">
         <div class="mx-auto max-w-3xl text-center">
-          <TypewriterLabel text="gunamaya.dev" trigger="animate" class="mb-6" />
+          <TypewriterLabel text="gunamaya.id" trigger="animate" class="mb-6" />
           <Motion
             as="h1"
             class="font-serif text-4xl font-bold leading-[1.1] tracking-tight text-foreground md:text-6xl lg:text-7xl"
