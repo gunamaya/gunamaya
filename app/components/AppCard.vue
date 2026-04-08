@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "~/lib/utils";
+import { NuxtLink } from "#components";
 
 const cardVariants = cva(
   "rounded-2xl border-2 border-border bg-card transition-all duration-300",
@@ -43,11 +44,7 @@ const classes = computed(() =>
 </script>
 
 <template>
-  <component
-    :is="to ? resolveComponent('NuxtLink') : as || 'div'"
-    :to="to"
-    :class="classes"
-  >
+  <component :is="to ? NuxtLink : as || 'div'" :to="to" :class="classes">
     <slot />
   </component>
 </template>

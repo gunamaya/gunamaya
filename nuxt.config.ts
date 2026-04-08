@@ -5,13 +5,26 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
-  modules: ["shadcn-nuxt", "@nuxt/fonts", "@nuxt/icon", "motion-v/nuxt"],
+  modules: [
+    "shadcn-nuxt",
+    "@nuxt/fonts",
+    "@nuxt/icon",
+    "motion-v/nuxt",
+    "@nuxt/image",
+  ],
   fonts: {
     provider: "fontsource",
     defaults: {
       weights: ["100 900"],
       styles: ["normal", "italic"],
       subsets: ["latin", "latin-ext"],
+    },
+  },
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: "id",
+      },
     },
   },
   icon: {

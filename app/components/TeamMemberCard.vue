@@ -11,11 +11,11 @@ defineProps<{
     <div
       class="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10"
     >
-      <img
+      <NuxtImg
         v-if="member.user"
         :src="'https://github.com/' + member.user + '.png'"
         alt="Avatar"
-        class="rounded-full"
+        class="rounded-full grayscale-100"
       />
       <span v-else class="font-mono text-xl font-bold text-primary">
         {{

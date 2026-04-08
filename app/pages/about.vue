@@ -56,8 +56,24 @@ const principles = [
 <template>
   <div>
     <!-- Hero -->
-    <section class="pt-32 pb-16">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <section class="pt-32 pb-16 relative">
+      <EffectLineWaves
+        :speed="0.3"
+        :innerLineCount="32"
+        :outerLineCount="36"
+        :warpIntensity="1"
+        :rotation="-45"
+        :edgeFadeWidth="0"
+        :colorCycleSpeed="1"
+        :brightness="0.2"
+        color1="#baeaff"
+        color2="#baeaff"
+        color3="#baeaff"
+        :enableMouseInteraction="true"
+        :mouseInfluence="2"
+        class="opacity-20"
+      />
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 relative">
         <TypewriterLabel text="tentang kami" trigger="animate" class="mb-6" />
         <Motion
           as="h1"

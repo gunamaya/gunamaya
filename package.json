@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxt/fonts": "^0.14.0",
     "@nuxt/icon": "^2.2.1",
+    "@nuxt/image": "2.0.0",
     "@vueuse/core": "^14.2.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -19,6 +20,7 @@
     "lucide-vue-next": "^1.0.0",
     "motion-v": "^2.2.0",
     "nuxt": "^4.4.2",
+    "ogl": "^1.0.11",
     "shadcn-nuxt": "^2.5.3",
     "tailwind-merge": "^3.5.0",
     "vue": "^3.5.32",

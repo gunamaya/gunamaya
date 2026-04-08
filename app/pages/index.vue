@@ -64,15 +64,22 @@ const allTech = [
   <div>
     <!-- Hero Section -->
     <section class="relative flex items-center overflow-hidden pt-20">
-      <!-- Gradient orbs -->
-      <div class="hero-orb hero-orb-1" />
-      <div class="hero-orb hero-orb-2" />
-      <div class="hero-orb hero-orb-3" />
-      <!-- Concentric rings -->
-      <div class="hero-rings hero-rings-left" />
-      <div class="hero-rings hero-rings-right" />
-      <!-- Dot grid overlay -->
-      <div class="absolute inset-0 dot-grid opacity-20" />
+      <EffectLineWaves
+        :speed="0.3"
+        :innerLineCount="32"
+        :outerLineCount="36"
+        :warpIntensity="1"
+        :rotation="-45"
+        :edgeFadeWidth="0"
+        :colorCycleSpeed="1"
+        :brightness="0.2"
+        color1="#baeaff"
+        color2="#baeaff"
+        color3="#baeaff"
+        :enableMouseInteraction="true"
+        :mouseInfluence="2"
+        class="opacity-20"
+      />
 
       <div class="relative mx-auto max-w-7xl px-6 py-24">
         <div class="mx-auto max-w-3xl text-center">

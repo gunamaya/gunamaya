@@ -10,7 +10,7 @@ const buttonVariants = cva(
       variant: {
         aurora: "btn-aurora text-primary-foreground",
         outline:
-          "border border-border text-foreground hover:border-primary/50 hover:text-primary",
+          "ring-2 ring-border ring-inset text-foreground hover:ring-primary hover:text-primary",
       },
       size: {
         sm: "px-5 py-2.5 text-sm",

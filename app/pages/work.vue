@@ -13,8 +13,24 @@ useSeoMeta({
 <template>
   <div>
     <!-- Hero -->
-    <section class="pt-32 pb-16">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <section class="pt-32 pb-16 relative">
+      <EffectLineWaves
+        :speed="0.3"
+        :innerLineCount="32"
+        :outerLineCount="36"
+        :warpIntensity="1"
+        :rotation="-45"
+        :edgeFadeWidth="0"
+        :colorCycleSpeed="1"
+        :brightness="0.2"
+        color1="#baeaff"
+        color2="#baeaff"
+        color3="#baeaff"
+        :enableMouseInteraction="true"
+        :mouseInfluence="2"
+        class="opacity-20"
+      />
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 relative">
         <TypewriterLabel text="portofolio" trigger="animate" class="mb-6" />
         <Motion
           as="h1"
@@ -23,10 +39,10 @@ useSeoMeta({
           :animate="{ opacity: 1, y: 0 }"
           :transition="{ duration: 0.6, delay: 0.1 }"
         >
-          Sistem yang kami
-          <span class="gradient-text">bangun</span
+          Sistem yang
+          <span class="gradient-text">dibangun</span
           ><span class="text-primary">,</span><br />
-          masalah yang kami selesaikan.
+          masalah yang <span class="gradient-text">diselesaikan</span>.
         </Motion>
         <Motion
           as="p"
@@ -42,7 +58,7 @@ useSeoMeta({
     </section>
 
     <!-- Projects Grid -->
-    <section class="mx-auto max-w-7xl px-6 pb-24 lg:px-8">
+    <section class="mx-auto max-w-7xl px-6 py-24 lg:px-8">
       <div class="grid gap-6 md:grid-cols-2">
         <Motion
           as="div"
