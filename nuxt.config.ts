@@ -25,6 +25,12 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "id",
       },
+      meta: [
+        {
+          name: "google-site-verification",
+          content: "Bl1S9Li3uzoJV1QLRro3lrb7mtWZhhrCkW85XL3WBGQ",
+        },
+      ],
     },
   },
   icon: {
