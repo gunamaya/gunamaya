@@ -10,14 +10,6 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: "centracast",
-    name: "Centracast",
-    description:
-      "Platform AI untuk generate video secara simpel dan otomatis — dari ide ke konten dalam hitungan menit.",
-    tags: ["AI", "Video Generation", "Automasi"],
-    featured: true,
-  },
-  {
     slug: "kecamatan-berdaya",
     name: "Kecamatan Berdaya",
     description:
